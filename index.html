@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Encriptador</title>
+</head>
+
+<body>
+  <header>
+    <img src="img/logo.png" alt="Alura Logo">
+  </header>
+
+  <main>
+
+    <section class="left">
+      <textarea name="input-text" id="input-text" cols="40" rows="6" placeholder="Ingrese el texto aquí..."></textarea>
+      <div class="btns">
+        <div class="legend">
+          <img src="img/bi_exclamation-circle-fill.png" alt="exclamation icon">
+          <p class="legend-text">Solo letras minúsculas y sin acentos</p>
+        </div>
+        <button class="btn-primary encriptar" onclick="btnEncriptar()">Encriptar</button>
+        <button class="btn-outline desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+      </div>
+    </section>
+
+    <section class="right">
+      <textarea name="output-text" id="output-text" cols="20" rows="8" readonly></textarea>
+      <div class="message">
+        <h2>Ningún mensaje fue encontrado</h2>
+        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+      </div>
+      <div class="tooltip">
+        <button class="btn-outline copiar" onclick="btnCopiar()" onmouseout="outFunc()">
+          <span class="tooltiptext" id="myTooltip">Copiar al portapapeles</span>
+          Copiar
+        </button>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Designed & Developed by <a href="mailto:hello@anniemacdesigns.com">Annie Mac</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
